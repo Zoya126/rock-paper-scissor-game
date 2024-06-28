@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS_project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="total" id="hide">
+       
+<div class="container1 hide" id="hide">
+    <div class="div1">
+        <p>ROCK</p>
+        <p>PAPER</p>
+        <p>SCISSORS</p>
+    </div>
+    <div class="div2">
+        <p class="para">COMPUTER</p>
+        <p class="para">SCORE</p>
+        <p id="compara"></p>
+    </div>
+    <div class="div2">
+        <p class="para">YOUR</p>
+        <p class="para">SCORE</p>   
+        <p id="userpara"></p>
+    </div>      
+</div>
+        <div class="container2 ">
+        <div class="rock rps" onclick="result('rock')"><img src="./r.png"></div>
+        <div class="scissors rps" onclick="result('scissors')"><img src="./s.png"></div>
+        <div class="paper rps" onclick="result('paper')"><img src="./p.png"></div>
+        <div class="line lrp circle"></div>    
+        <div class="line lps circle"></div>            
+        <div class="line lrs circle "></div>    
+        </div>
+    <div class="container3">
+        <div class="crass"  ><button id="crass" onclick="crass()">x</button></div>
+
+        <p class="pararul">Game Rules</p>
+        <ul>
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+        </ul>
+    </div>
+   
+    <div class="contast hide" >
+        <div class="userhand">
+            <p class="picked">YOU PICKED</p>
+            <div class="handimagecontainer">
+                <img id="userpicimage" src="" alt="">
+            </div>
+        </div>
+        <div>
+            <p id="winstatus" ></p>
+            <p id="againstpc" ></p>
+            <button id="playbutton" onclick="playagain()">PLAY AGAIN</button>
+        </div>
+        <div class="computerhand">
+            <p class="picked">PC PICKED</p>
+            <div class="computerchoose">
+                <img id="compicimage" src="" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="button">
+    <button id="button1" onclick="show()">RULES</button>
+    <button id="button2" onclick="nextfun()">NEXT</button>
+   
+
+     </div>
+    </div>
+       <div class="winningpage">
+        <div class="trphydiv">
+            <img src="./starpng.png" alt="">
+            <img  class="imagetropy" src="./trophy.png" alt="">
+        </div>
+        <div class="hurry">
+            <p class="hurryword">HURRAY!!</p>
+            <p class="wonword">YOU WON THE GAME</p>
+            <button id="playbutton"class="playbutton" onclick="playagain2()">PLAY AGAIN</button>
+            
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
